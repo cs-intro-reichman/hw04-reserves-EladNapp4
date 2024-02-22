@@ -88,9 +88,9 @@ public class StringOps {
                 
                 last_char = string.charAt(i - 1);
 
-                if (current_char >= 'A' && current_char <= 'Z') {
+                //if (current_char >= 'A' && current_char <= 'Z') {
                     new_string += (char) (current_char + 32);
-                } else {
+                //} else {
                 if (last_char == ' ' && current_char != ' ') {
                     if (current_char >= 'a' && current_char <= 'z' ) {
                         new_string += (char) (current_char - 32);
@@ -102,7 +102,7 @@ public class StringOps {
                     new_string += (char) (current_char);
                 }
                 }
-                }
+                //}
             }
         }
         return new_string;
