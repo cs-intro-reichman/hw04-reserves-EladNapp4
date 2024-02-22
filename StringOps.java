@@ -73,12 +73,9 @@ public class StringOps {
             t++;
         }
 
-
-
-
         for (int i = t; i < string.length(); i++) {
             current_char = string.charAt(i);
-            if (i == 0) {
+            if (i == t) {
                 if (current_char >= 'A' && current_char <= 'Z') {
                     new_string += (char) (current_char + 32);
                 } else { 
@@ -87,7 +84,7 @@ public class StringOps {
             }
         
 
-            if (i != 0) {
+            if (i != t) {
                 
                 last_char = string.charAt(i - 1);
 
