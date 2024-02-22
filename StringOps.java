@@ -100,9 +100,12 @@ public class StringOps {
                 } else {
                 if (current_char >= 'a' && current_char <= 'z') {
                     new_string += (char) (current_char);
+                } else {
+                    if (current_char >= 'A' && current_char <= 'Z') {
+                        new_string += (char) (current_char + 32);
                 }
                 }
-                //}
+                }
             }
         }
         return new_string;
