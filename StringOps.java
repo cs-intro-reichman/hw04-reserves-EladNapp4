@@ -67,18 +67,27 @@ public class StringOps {
 		char current_char = 0;
 		char last_char = 0;
 
-        for (int i = 0; i < string.length(); i++) {
+        int t = 0; 
+
+        while (string.charAt(t) == 32) {
+            t++;
+        }
+
+
+
+
+        for (int i = t; i < string.length(); i++) {
             current_char = string.charAt(i);
-            if (i == 0) {
+            //if (i == 0) {
                 if (current_char >= 'A' && current_char <= 'Z') {
                     new_string += (char) (current_char + 32);
                 } else { 
                     new_string += (char) (current_char);
                 }
-            }
+            //}
         
 
-            if (i != 0) {
+            //if (i != 0) {
                 
                 last_char = string.charAt(i - 1);
 
@@ -97,7 +106,7 @@ public class StringOps {
                 }
                 }
                 }
-            }
+            //}
         }
         return new_string;
     }
