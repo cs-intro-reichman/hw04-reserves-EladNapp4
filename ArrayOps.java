@@ -27,7 +27,7 @@ public class ArrayOps {
         int second_max = array[0];
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > max){
+            if (array[i] >= max){
                 second_max = max;
                 max = array[i];
             }
