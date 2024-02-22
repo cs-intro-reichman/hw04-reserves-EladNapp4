@@ -78,16 +78,16 @@ public class StringOps {
 
         for (int i = t; i < string.length(); i++) {
             current_char = string.charAt(i);
-            //if (i == 0) {
+            if (i == 0) {
                 if (current_char >= 'A' && current_char <= 'Z') {
                     new_string += (char) (current_char + 32);
                 } else { 
                     new_string += (char) (current_char);
                 }
-            //}
+            }
         
 
-            //if (i != 0) {
+            if (i != 0) {
                 
                 last_char = string.charAt(i - 1);
 
@@ -106,7 +106,7 @@ public class StringOps {
                 }
                 }
                 }
-            //}
+            }
         }
         return new_string;
     }
